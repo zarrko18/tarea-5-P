@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body>
+        {{#author}}
+        <form action="/update_Author/{{id}}/{{id}}" method="POST">
+            <center><h1>Autores</h1> <br>
+            <label for="">Name</label>
+        <input value="{{name}}" name="name" id="name" type="text">
+        <label for="">nationality</label>
+        <input value="{{nationality}}" name="nationality" id="nationality" type="text">
+        <label for="">birth</label>
+        <input value="{{birth}}" name="birth" id="birth" type="text">
+        <label for="">fields</label>
+        <input value="{{fields}}" name="fields" id="fields" type="text">
+             
+      
+        <input class="button-primary" type="submit" value="Editar">
+    </center>
+    </form>
+        {{/author}}
+</body>
+</html>

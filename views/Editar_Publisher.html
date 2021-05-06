@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body>
+        {{#publisher}}
+        <form action="/update_Publisher/{{id}}/{{id}}" method="POST">
+            <center><h1>Autores</h1> <br>
+                <label for="">Name</label>
+        <input value="{{name}}" name="name" id="name" type="text">
+        <label for="">country</label>
+        <input value="{{country}}" name="country" id="country" type="text">
+        <label for="">founded</label>
+        <input value="{{founded}}" name="founded" id="founded" type="text">
+        <label for="">genere</label>
+        <input value="{{genere}}" name="genere" id="genere" type="text">
+             
+      
+        <input class="button-primary" type="submit" value="Editar">
+    </center>
+    </form>
+        {{/publisher}}
+</body>
+</html>

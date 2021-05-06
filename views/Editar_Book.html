@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <body>
+        {{#books}}
+        <form action="/update/{{id}}/{{id}}" method="POST">
+            <center><h1>Autores</h1> <br>
+                <label for="">title</label>
+        <input value="{{title}}" name="title" id="title" type="text">
+        <label for="">edition</label>
+        <input value="{{edition}}" name="edition" id="edition" type="text">
+        <label for="">copyright</label>
+        <input value="{{copyright}}" name="copyright" id="copyright" type="text">
+        <label for="">pages</label>
+        <input value="{{pages}}" name="pages" id="pages" type="text">
+             
+      
+        <input class="button-primary" type="submit" value="Editar">
+        </center>
+    </form>
+        {{/books}}
+</body>
+</html>
